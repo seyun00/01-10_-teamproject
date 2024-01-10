@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <a href="index.html"><img src="image/mainicon.png" alt="mainicon" height="50" width="50">노트북 다나와</h1></a>
 </head>
 <body>
   <header>
     <form action="">
       <fieldset>
-        <h2>제품 정보</h2>
-        <div><img src="https://picsum.photos/100/100" alt=""></div>
+        <h2>제품 선택</h2>
         <div>
           <label for="product_name"></label>제품명: 
-          <input type="text" name="product_name" id="poduct_name" readonly placeholder="제품 이름">
+          <select name="product_name" id="product_name">
+            <option value="Lenovo">레노버 2023 게이밍 3 15ARH7 15.6 지포스 RTX4050</option>
+            <option value="LG">LG전자 2023 그램 15</option>
+          </select>
         </div>
       </fieldset>
       <fieldset>
@@ -22,9 +25,10 @@
           <label for="user_name">이름</label>
           <input type="text" name="user_name" id="user_name">
         </div>
-        <div><label for="">이메일</label><input type="text"></div>
-        <div><label for="">연락처</label><input type="text"></div>
-        <div><label for="">주소</label><input type="text"></div>
+        <div><label for="user_email">이메일</label><input type="text" name="user_email" id="user_email"></div>
+        <div><label for="user_phonenumber">연락처</label><input type="text" name="user_phonenumber" id="user_phonenumber"></div>
+        <div><label for="user_addre">주소</label><input type="text" name="user_addre" id="user_addre"></div>
+        <div><input type="submit" value="구매하기"> <input type="submit" value="취소"></div>
       </fieldset>
     </form>
   </header>
