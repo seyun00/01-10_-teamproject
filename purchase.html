@@ -9,9 +9,22 @@
   <header>
     <form action="">
       <fieldset>
-        <legend>제품 정보</legend>
+        <h2>제품 정보</h2>
         <div><img src="https://picsum.photos/100/100" alt=""></div>
-        <div><label for=""></label>제품명: <input type="text" readonly placeholder="제품 이름"></div>
+        <div>
+          <label for="product_name"></label>제품명: 
+          <input type="text" name="product_name" id="poduct_name" readonly placeholder="제품 이름">
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>구매자 정보</h2>
+        <div>
+          <label for="user_name">이름</label>
+          <input type="text" name="user_name" id="user_name">
+        </div>
+        <div><label for="">이메일</label><input type="text"></div>
+        <div><label for="">연락처</label><input type="text"></div>
+        <div><label for="">주소</label><input type="text"></div>
       </fieldset>
     </form>
   </header>
